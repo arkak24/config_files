@@ -56,3 +56,15 @@ vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neo
 vim.keymap.set('n', '<S-l>', ':BufferLineCycleNext<CR>', { silent = true })
 vim.keymap.set('n', '<S-h>', ':BufferLineCyclePrev<CR>', { silent = true })
 
+-- for the comment
+-- Normal mode: Ctrl + /
+vim.keymap.set("n", "<C-_>", function()
+  require("Comment.api").toggle.linewise.current()
+end, { noremap = true, silent = true })
+
+-- Visual mode: toggle comment on selected lines
+vim.keymap.set("v", "<C-_>", function()
+  local esc = vim.api.nvim_replace_termcodes("<ESC>", true, false, true)
+  vim.api.nvim_feedkeys(esc, "nx", false)
+  require("Comment.api").toggle.linewise(vim.fn.visualmode())
+end, { noremap = true, silent = true })
