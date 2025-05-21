@@ -31,17 +31,24 @@ return {
         window = {
           completion = cmp.config.window.bordered({
             border = "rounded",
-            winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None",
+            winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenu,CursorLine:CmpPmenuSel,Search:None",
             scrollbar = false,
           }),
           documentation = cmp.config.window.bordered({
             border = "rounded",
+            winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder",
           }),
         },
         experimental = {
           ghost_text = true,
         },
       })
+
+      vim.cmd([[
+            highlight! link CmpPmenu Pmenu
+            highlight! link CmpPmenuBorder FloatBorder
+            highlight! link CmpPmenuSel PmenuSel
+      ]])
     end,
   },
 }

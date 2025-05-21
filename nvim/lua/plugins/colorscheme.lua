@@ -15,6 +15,9 @@ return {
             vim.o.background = "dark"
       end,
   },
+  { 
+        "EdenEast/nightfox.nvim"
+  },
   {
     "sainnhe/everforest",
     lazy = false,
