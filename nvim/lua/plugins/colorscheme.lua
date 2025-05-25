@@ -16,7 +16,10 @@ return {
       end,
   },
   { 
-        "EdenEast/nightfox.nvim"
+        "EdenEast/nightfox.nvim",
+        config = function()
+              vim.cmd("colorscheme terafox")
+        end
   },
   {
     "sainnhe/everforest",
@@ -29,7 +32,7 @@ return {
       vim.g.everforest_better_performance = 1
       vim.g.everforest_transparent_background = 0
       vim.o.background = "dark"
-      vim.cmd("colorscheme everforest")
+      --vim.cmd("colorscheme everforest")
     end
   },
 }
