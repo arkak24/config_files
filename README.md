@@ -1,15 +1,11 @@
 # Setup Neovim Configuration
 
-This guide shows how to clone the repository and set up the `nvim` configuration folder correctly on Linux/macOS and Windows systems.
-
----
-
 ## For Linux / macOS
 
 1. Clone the entire repository:
 
    ```bash
-   git clone https://github.com/avgjo12/config_files.git
+   git clone https://github.com/arkak24/config_files.git
    ```
 
 2. Move the `nvim` folder to your Neovim config directory:
@@ -31,7 +27,7 @@ This guide shows how to clone the repository and set up the `nvim` configuration
 1. Clone the entire repository:
 
    ```powershell
-   git clone https://github.com/avgjo12/config_files.git
+   git clone https://github.com/arkak24/config_files.git
    ```
 
 2. Move the `nvim` folder to your Neovim config directory:
