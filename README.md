@@ -1,5 +1,14 @@
 # Setup Neovim Configuration
 
+This is a very simple Neovim configuration, you can tweak and install plugins in the nvim/lua/plugins
+
+REQUIRMENTS for this config :
+
+    1. Neovim
+    2. clangd (for c and c++ suggestion and autocompletion)
+    3. Nerd Font
+    4. Regrep
+
 ## For Linux / macOS
 
 1. Clone the entire repository:
